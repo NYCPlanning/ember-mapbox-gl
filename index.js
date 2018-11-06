@@ -25,5 +25,11 @@ module.exports = {
     this._super.included.apply(this, arguments);
 
     app.import('app/styles/mapbox-gl.css');
-  }
+  },
+
+  options: {
+    autoImport:{
+      exclude: ['mapbox-gl'],
+    },
+  },
 };
